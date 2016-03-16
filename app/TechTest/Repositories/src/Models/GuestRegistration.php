@@ -18,9 +18,19 @@ class GuestRegistration extends Model
      */
     protected $table = 'guest_registration';
 
+    public $timestamps = false;
+
+
     /**
      * @var array
      */
+    protected $guarded = [ ];
+
+
+    /**
+     * @var array
+     */
+
     protected $fillable = [
         'personal_id',
         'title',
@@ -31,9 +41,5 @@ class GuestRegistration extends Model
         'comments',
     ];
 
-    /**
-     * @var array
-     */
-    protected $guarded = [];
 
 }

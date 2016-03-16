@@ -130,7 +130,7 @@ abstract class TechTestRepository implements TechTestInterface
             throw new TechTestException("Class {$this->model()} must be an instance of Illuminate\\Database\\Eloquent\\Model\\");
         }
 
-        return $this->model = $model->newQuery();
+        return $this->model = $model;
     }
 
 }

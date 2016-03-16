@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get( '/', function () {
+    return View::make( 'index' );
+} );
 
-Route::get('home', 'HomeController@index');
+// API ROUTES ==================================
+Route::group( array( 'prefix' => 'api' ), function () {
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+    Route::resource( 'register', '\TechTest\Repositories\Controllers\GuestRegistrationController',
+        array( 'only' => array( 'index' ) ) );
+
+    Route::post( 'register/store', '\TechTest\Repositories\Controllers\GuestRegistrationController@store' );
+
+    Route::resource( 'countries', '\TechTest\Repositories\Controllers\CountryController',
+        array( 'only' => array( 'index' ) ) );
+
+} );
