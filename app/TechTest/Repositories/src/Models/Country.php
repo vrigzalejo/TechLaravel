@@ -18,6 +18,13 @@ class Country extends Model
      */
     protected $table = 'country';
 
+    public $timestamps = false;
+
+    /**
+     * @var array
+     */
+    protected $guarded = [];
+
     /**
      * @var array
      */
@@ -26,8 +33,5 @@ class Country extends Model
         'country_name',
     ];
 
-    /**
-     * @var array
-     */
-    protected $guarded = [];
+
 }

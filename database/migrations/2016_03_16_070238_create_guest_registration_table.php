@@ -14,8 +14,13 @@ class CreateGuestRegistrationTable extends Migration {
 	{
 		Schema::create('guest_registration', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
+			$table->integer('personal_id')->unique();
+			$table->string('title', 5);
+			$table->string('first_name', 50);
+			$table->string('last_name', 50);
+			$table->string('country_code', 3);
+			$table->string('sex', 1);
+			$table->string('comments', 500);
 		});
 	}
 
