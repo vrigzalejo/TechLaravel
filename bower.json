@@ -1,0 +1,24 @@
+{
+  "name": "TechTest",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Brigido Alejo <brigido.alejo@consumercloud.co.uk>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.1.8"
+  }
+}
