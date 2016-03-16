@@ -2,7 +2,7 @@
 <html lang="en" ng-app="techTestApp">
 <head>
     <meta charset="UTF-8">
-    <title>echTest Application</title>
+    <title>TechTest Application</title>
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
